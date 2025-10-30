@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f5f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER & NAVBAR ===== */
+header {
+  background-color: #4a2c2a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  background-color: #d8c3a5;
+  color: #4a2c2a;
+  font-weight: 600;
+}
+
+/* ===== HERO SECTION (Beranda) ===== */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(70%);
+  position: relative;
+  z-index: 1; 
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  z-index: 2; 
+}
+
+.hero-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-text p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.btn {
+  background-color: #d8c3a5;
+  color: #4a2c2a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e9d8b2;
+}
+
+/* ===== MAIN CONTENT (Umum) ===== */
+main {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main h2 {
+  color: #4a2c2a;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ===== MENU PAGE ===== */
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  background-color: whitesmoke;
+}
+
+.menu-item h3 {
+  color: #4a2c2a;
+  margin-top: 10px;
+}
+
+.menu-item p {
+  padding: 10px;
+}
+
+/* ===== TENTANG PAGE ===== */
+.tentang-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tentang-page article {
+  flex: 2;
+  min-width: 300px;
+}
+
+.tentang-page aside {
+  flex: 1;
+  background-color: #efe6dd;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.tentang-page aside img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== GALERY PAGE ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  filter: brightness(90%);
+}
+
+/* ===== KONTAK PAGE ===== */
+.kontak-page form {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kontak-page label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #4a2c2a;
+}
+
+.kontak-page p {
+    text-align: center;
+}
+
+.kontak-page input,
+.kontak-page textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  font-family: inherit;
+}
+
+.kontak-page button {
+  margin-top: 15px;
+  width: 100%;
+  background-color: #4a2c2a;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.kontak-page button:hover {
+  background-color: #d8c3a5;
+  color: #4a2c2a;
+  font-weight: 600;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #4a2c2a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 900px) {
+  .tentang-page {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6em;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
